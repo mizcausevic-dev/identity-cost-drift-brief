@@ -32,13 +32,13 @@ jobs:
         run: |
           DOMAIN=$(cat CNAME 2>/dev/null | tr -d '[:space:]')
           if [ -n "$DOMAIN" ]; then
-            printf 'User-agent: *\nAllow: /\nSitemap: https://%s/sitemap.xml\n' "$DOMAIN" > site/robots.txt
+            printf 'User-agent: *\nAllow: /\nSitemap: https://%s/sitemap.xml\n' "$DOMAIN" > dist-static/robots.txt
             TODAY=$(date -u +%Y-%m-%d)
             {
               echo '<?xml version="1.0" encoding="UTF-8"?>'
               echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
               while IFS= read -r -d '' f; do
-                rel="${f#site/}"
+                rel="${f#dist-static/}"
                 if [ "$rel" = "index.html" ]; then
                   loc="https://$DOMAIN/"
                 elif [[ "$rel" == */index.html ]]; then
@@ -47,10 +47,10 @@ jobs:
                   loc="https://$DOMAIN/$rel"
                 fi
                 echo "  <url><loc>$loc</loc><lastmod>$TODAY</lastmod></url>"
-              done < <(find site -name '*.html' -print0)
+              done < <(find dist-static -name '*.html' -print0)
               echo '</urlset>'
-            } > site/sitemap.xml
-            echo "wrote site/robots.txt + site/sitemap.xml for $DOMAIN"
+            } > dist-static/sitemap.xml
+            echo "wrote dist-static/robots.txt + dist-static/sitemap.xml for $DOMAIN"
             node scripts/seo-meta.mjs "$DOMAIN"
           else
             echo "no CNAME -> skipping SEO assets"
@@ -58,6 +58,6 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: dist-static
       - id: deployment
         uses: actions/deploy-pages@v4
