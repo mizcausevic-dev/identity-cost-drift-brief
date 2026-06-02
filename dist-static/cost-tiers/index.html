@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cost tiers · Kinetic Gain</title>
+    <meta name="description" content="Cost-tier view showing which identity-cost failure is strongest in each lane." />
+    <style>
+      :root { color-scheme: dark; --bg:#07111d; --panel:#0d1a2b; --border:rgba(103,224,190,.22); --text:#edf2ff; --muted:#9fb0cf; --accent:#67e0be; --accent-2:#7dc4ff; }
+      * { box-sizing:border-box; }
+      body { margin:0; font-family:"Segoe UI",system-ui,sans-serif; background:radial-gradient(circle at top left, rgba(125,196,255,.12), transparent 30%), linear-gradient(180deg,#050c16 0%,var(--bg) 100%); color:var(--text); }
+      a { color:var(--accent-2); text-decoration:none; }
+      .wrap { max-width:1180px; margin:0 auto; padding:32px 24px 64px; }
+      .hero,.section { background:linear-gradient(180deg, rgba(14,28,45,.95), rgba(10,19,33,.98)); border:1px solid var(--border); border-radius:28px; padding:28px; box-shadow:0 18px 60px rgba(2,7,16,.35); }
+      .hero { margin-bottom:24px; }
+      .eyebrow { display:inline-block; padding:10px 16px; border-radius:999px; border:1px solid var(--border); background:rgba(103,224,190,.08); color:var(--accent); font-size:12px; text-transform:uppercase; letter-spacing:.28em; }
+      h1,h2 { margin:18px 0 12px; font-family:Georgia,serif; line-height:.95; }
+      h1 { font-size:clamp(56px,8vw,92px); max-width:980px; }
+      h2 { font-size:clamp(36px,4vw,54px); }
+      .lede { color:var(--muted); font-size:20px; line-height:1.6; max-width:920px; }
+      .nav { display:flex; gap:10px; flex-wrap:wrap; margin-top:22px; }
+      .nav a { padding:10px 14px; border:1px solid rgba(125,196,255,.18); border-radius:999px; color:var(--muted); }
+      .nav a.active { color:var(--text); border-color:var(--accent); background:rgba(103,224,190,.08); }
+      .metrics,.grid { display:grid; gap:18px; }
+      .metrics { grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); margin-top:26px; }
+      .metric,.card,.table-wrap { background:rgba(16,32,50,.76); border:1px solid rgba(125,196,255,.12); border-radius:22px; padding:18px; }
+      .metric-label,.chip { color:var(--accent); text-transform:uppercase; letter-spacing:.18em; font-size:12px; }
+      .metric-value { display:block; font-size:40px; font-weight:700; margin-top:10px; }
+      .metric-copy { margin-top:10px; color:var(--muted); line-height:1.5; }
+      .section { margin-top:24px; }
+      .grid { grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); }
+      .card h3 { margin:12px 0 10px; font-size:30px; line-height:1.05; }
+      .card p,li { color:var(--muted); line-height:1.6; }
+      .table-wrap { overflow-x:auto; }
+      table { width:100%; border-collapse:collapse; }
+      th,td { text-align:left; padding:12px; border-bottom:1px solid rgba(125,196,255,.12); vertical-align:top; }
+      th { color:var(--accent); font-size:12px; text-transform:uppercase; letter-spacing:.18em; }
+      ul { padding-left:20px; }
+      pre { white-space:pre-wrap; overflow-wrap:anywhere; color:var(--muted); background:rgba(7,17,29,.75); border:1px solid rgba(125,196,255,.12); border-radius:18px; padding:18px; }
+      .footer { margin-top:24px; color:var(--muted); font-size:14px; display:flex; gap:18px; flex-wrap:wrap; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="hero"><span class="eyebrow">Cost tiers</span><h1>The real drift stays visible: is it license waste, guest sprawl, duplicated controls, review burden, or raw governance weakness?</h1><p class="lede">This view keeps each lane tied to the dominant identity-cost weakness so leadership can tighten the right thing first.</p><div class="nav"><a href="/">Overview</a><a href="/drift-register">Drift register</a><a class="active" href="/cost-tiers">Cost tiers</a><a href="/remediation-posture">Remediation posture</a><a href="/verification">Verification</a><a href="/docs">Docs</a></div></section><section class="section table-wrap"><table><thead><tr><th>Lane</th><th>Tier</th><th>Dimension</th><th>Risk headline</th><th>Drift signal</th><th>Blocking issue</th><th>Drift</th><th>License waste</th><th>Review burden</th><th>Duplication</th><th>Control gap</th></tr></thead><tbody><tr><td>Entra and Microsoft 365 identity estate</td><td>PRESSURED</td><td>LICENSE_OVERLAP</td><td>Board-visible platform maturity is arriving faster than access-spend discipline.</td><td>Premium entitlements stay attached after role changes, and review cycles do not reclaim them fast enough.</td><td>One role transition still leaves too many residual licenses and duplicated control assignments behind.</td><td>72</td><td>81</td><td>64</td><td>58</td><td>55</td></tr><tr><td>Privileged access and secrets governance</td><td>CONSTRAINED</td><td>TOOL_DUPLICATION</td><td>The trust story is strong, yet the tooling stack is still more expensive and heavier than it needs to be.</td><td>Secrets, session, and access review workflows still branch across separate systems that partially duplicate each other.</td><td>One privileged control story still requires evidence from too many adjacent products and review paths.</td><td>77</td><td>63</td><td>69</td><td>82</td><td>61</td></tr><tr><td>Procurement and vendor access operations</td><td>PRESSURED</td><td>REVIEW_DRIFT</td><td>The enterprise sales motion is credible, but access governance is still more manual and expensive than necessary.</td><td>Questionnaire users, trust-room collaborators, and proof-room admins still linger beyond the narrow window in which they are useful.</td><td>One commercial diligence packet still creates too many temporary access decisions without one clean review standard.</td><td>66</td><td>57</td><td>73</td><td>49</td><td>53</td></tr><tr><td>FinTech merchant and treasury control estate</td><td>BROKEN</td><td>UNUSED_ENTITLEMENT</td><td>High-value controls are being reused as if they were permanent, not exceptional.</td><td>Merchant, treasury, and KYC contributors still keep premium or elevated access long after the triggering work ends.</td><td>One control exception still tends to create multiple long-lived entitlements with weak cleanup follow-through.</td><td>81</td><td>74</td><td>71</td><td>54</td><td>77</td></tr><tr><td>Nonprofit and foundation collaboration access</td><td>PRESSURED</td><td>GUEST_SPRAWL</td><td>Low-friction collaboration is masking a growing cleanup and license burden.</td><td>Outcome proof, grant evidence, and stewardship rooms still accumulate outside collaborators faster than they shed them.</td><td>One shared program packet still spawns too many persistent guest accounts without one clear closeout owner.</td><td>64</td><td>49</td><td>61</td><td>43</td><td>57</td></tr><tr><td>Robotics and override operator access</td><td>CONSTRAINED</td><td>ROLE_BLOAT</td><td>Innovation access is outrunning role precision.</td><td>Fleet, sensor, and override work still rely on broad operator roles instead of one narrower evidence-backed access model.</td><td>One technical responder still keeps more standing access than the lane’s actual operating rhythm requires.</td><td>70</td><td>52</td><td>58</td><td>51</td><td>69</td></tr></tbody></table></section>
+      <div class="footer">
+        <span>Identity Cost Drift Brief</span>
+        <a href="https://idcost.kineticgain.com">idcost.kineticgain.com</a>
+        <a href="https://github.com/mizcausevic-dev/">GitHub</a>
+        <a href="https://www.linkedin.com/in/mirzacausevic/">LinkedIn</a>
+        <a href="https://kineticgain.com/">Kinetic Gain</a>
+      </div>
+    </div>
+  </body>
+</html>

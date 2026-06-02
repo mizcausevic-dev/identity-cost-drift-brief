@@ -1,0 +1,110 @@
+[
+  {
+    "lane": "Entra and Microsoft 365 identity estate",
+    "driftTier": "PRESSURED",
+    "dimension": "LICENSE_OVERLAP",
+    "riskHeadline": "Board-visible platform maturity is arriving faster than access-spend discipline.",
+    "driftSignal": "Premium entitlements stay attached after role changes, and review cycles do not reclaim them fast enough.",
+    "blockingIssue": "One role transition still leaves too many residual licenses and duplicated control assignments behind.",
+    "evidenceArtifacts": [
+      "entra access review control plane",
+      "conditional access posture board",
+      "intune app protection lab"
+    ],
+    "driftScore": 72,
+    "licenseWasteScore": 81,
+    "accessReviewBurdenScore": 64,
+    "duplicationScore": 58,
+    "controlGapScore": 55
+  },
+  {
+    "lane": "Privileged access and secrets governance",
+    "driftTier": "CONSTRAINED",
+    "dimension": "TOOL_DUPLICATION",
+    "riskHeadline": "The trust story is strong, yet the tooling stack is still more expensive and heavier than it needs to be.",
+    "driftSignal": "Secrets, session, and access review workflows still branch across separate systems that partially duplicate each other.",
+    "blockingIssue": "One privileged control story still requires evidence from too many adjacent products and review paths.",
+    "evidenceArtifacts": [
+      "identity risk evidence ledger",
+      "access certification api dotnet",
+      "workforce access certification hub"
+    ],
+    "driftScore": 77,
+    "licenseWasteScore": 63,
+    "accessReviewBurdenScore": 69,
+    "duplicationScore": 82,
+    "controlGapScore": 61
+  },
+  {
+    "lane": "Procurement and vendor access operations",
+    "driftTier": "PRESSURED",
+    "dimension": "REVIEW_DRIFT",
+    "riskHeadline": "The enterprise sales motion is credible, but access governance is still more manual and expensive than necessary.",
+    "driftSignal": "Questionnaire users, trust-room collaborators, and proof-room admins still linger beyond the narrow window in which they are useful.",
+    "blockingIssue": "One commercial diligence packet still creates too many temporary access decisions without one clean review standard.",
+    "evidenceArtifacts": [
+      "procurement ready os",
+      "security questionnaire answer studio",
+      "trust center evidence room"
+    ],
+    "driftScore": 66,
+    "licenseWasteScore": 57,
+    "accessReviewBurdenScore": 73,
+    "duplicationScore": 49,
+    "controlGapScore": 53
+  },
+  {
+    "lane": "FinTech merchant and treasury control estate",
+    "driftTier": "BROKEN",
+    "dimension": "UNUSED_ENTITLEMENT",
+    "riskHeadline": "High-value controls are being reused as if they were permanent, not exceptional.",
+    "driftSignal": "Merchant, treasury, and KYC contributors still keep premium or elevated access long after the triggering work ends.",
+    "blockingIssue": "One control exception still tends to create multiple long-lived entitlements with weak cleanup follow-through.",
+    "evidenceArtifacts": [
+      "merchant risk review console",
+      "payment reconciliation exception desk",
+      "kyc refresh case router"
+    ],
+    "driftScore": 81,
+    "licenseWasteScore": 74,
+    "accessReviewBurdenScore": 71,
+    "duplicationScore": 54,
+    "controlGapScore": 77
+  },
+  {
+    "lane": "Nonprofit and foundation collaboration access",
+    "driftTier": "PRESSURED",
+    "dimension": "GUEST_SPRAWL",
+    "riskHeadline": "Low-friction collaboration is masking a growing cleanup and license burden.",
+    "driftSignal": "Outcome proof, grant evidence, and stewardship rooms still accumulate outside collaborators faster than they shed them.",
+    "blockingIssue": "One shared program packet still spawns too many persistent guest accounts without one clear closeout owner.",
+    "evidenceArtifacts": [
+      "grant compliance evidence desk",
+      "program outcome proof ledger",
+      "donor stewardship ops console"
+    ],
+    "driftScore": 64,
+    "licenseWasteScore": 49,
+    "accessReviewBurdenScore": 61,
+    "duplicationScore": 43,
+    "controlGapScore": 57
+  },
+  {
+    "lane": "Robotics and override operator access",
+    "driftTier": "CONSTRAINED",
+    "dimension": "ROLE_BLOAT",
+    "riskHeadline": "Innovation access is outrunning role precision.",
+    "driftSignal": "Fleet, sensor, and override work still rely on broad operator roles instead of one narrower evidence-backed access model.",
+    "blockingIssue": "One technical responder still keeps more standing access than the lane’s actual operating rhythm requires.",
+    "evidenceArtifacts": [
+      "robot fleet exception board",
+      "sensor health drift monitor",
+      "human override readiness console"
+    ],
+    "driftScore": 70,
+    "licenseWasteScore": 52,
+    "accessReviewBurdenScore": 58,
+    "duplicationScore": 51,
+    "controlGapScore": 69
+  }
+]

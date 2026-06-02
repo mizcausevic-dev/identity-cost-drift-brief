@@ -1,0 +1,74 @@
+[
+  {
+    "lane": "Entra and Microsoft 365 identity estate",
+    "dimension": "LICENSE_OVERLAP",
+    "compositeRecoveryScore": 66,
+    "recoverableCostMillions": 11,
+    "driftScore": 72,
+    "companyTags": [
+      "Microsoft",
+      "Entra",
+      "Intune"
+    ]
+  },
+  {
+    "lane": "Privileged access and secrets governance",
+    "dimension": "TOOL_DUPLICATION",
+    "compositeRecoveryScore": 70.4,
+    "recoverableCostMillions": 9,
+    "driftScore": 77,
+    "companyTags": [
+      "CyberArk",
+      "Okta",
+      "Microsoft"
+    ]
+  },
+  {
+    "lane": "Procurement and vendor access operations",
+    "dimension": "REVIEW_DRIFT",
+    "compositeRecoveryScore": 59.6,
+    "recoverableCostMillions": 5,
+    "driftScore": 66,
+    "companyTags": [
+      "Google",
+      "Drata",
+      "Vanta"
+    ]
+  },
+  {
+    "lane": "FinTech merchant and treasury control estate",
+    "dimension": "UNUSED_ENTITLEMENT",
+    "compositeRecoveryScore": 71.4,
+    "recoverableCostMillions": 8,
+    "driftScore": 81,
+    "companyTags": [
+      "Stripe",
+      "Plaid",
+      "AWS"
+    ]
+  },
+  {
+    "lane": "Nonprofit and foundation collaboration access",
+    "dimension": "GUEST_SPRAWL",
+    "compositeRecoveryScore": 54.8,
+    "recoverableCostMillions": 3,
+    "driftScore": 64,
+    "companyTags": [
+      "Google",
+      "Salesforce",
+      "Blackbaud"
+    ]
+  },
+  {
+    "lane": "Robotics and override operator access",
+    "dimension": "ROLE_BLOAT",
+    "compositeRecoveryScore": 60,
+    "recoverableCostMillions": 4,
+    "driftScore": 70,
+    "companyTags": [
+      "AWS",
+      "NVIDIA",
+      "Boston Dynamics"
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+[
+  "Synthetic identity-cost data only - no live IAM exports, billing records, access-review logs, or board materials are included.",
+  "Scores are modeled to show how Kinetic Gain can expose license overlap, guest sprawl, role bloat, review drift, and control duplication in one board-readable surface.",
+  "All routes are read-only and demonstrate executive identity-cost diagnosis, not production IAM advice, legal guidance, or live access administration instructions."
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "id": "entra-drift",
+    "lane": "Entra and Microsoft 365 identity estate",
+    "dimension": "LICENSE_OVERLAP",
+    "action": "RECLAIM",
+    "operatingCluster": "Cloud identity",
+    "driftTier": "PRESSURED",
+    "boardQuestion": "Where is Microsoft identity spend drifting because entitlements and premium tiers are not being reclaimed tightly enough?",
+    "owner": "Identity governance lead",
+    "audience": "Board technology committee",
+    "driftNarrative": "Microsoft identity is strategically important, though license overlap is still leaking money across adjacent admin layers.",
+    "operatingReality": "Coverage is strong, but too many overlapping SKUs and sticky assignments are weakening the cost story.",
+    "riskHeadline": "Board-visible platform maturity is arriving faster than access-spend discipline.",
+    "driftSignal": "Premium entitlements stay attached after role changes, and review cycles do not reclaim them fast enough.",
+    "blockingIssue": "One role transition still leaves too many residual licenses and duplicated control assignments behind.",
+    "evidenceArtifacts": [
+      "entra access review control plane",
+      "conditional access posture board",
+      "intune app protection lab"
+    ],
+    "opportunityMoves": [
+      "reclaim premium tiers faster",
+      "separate durable from temporary entitlements",
+      "tighten transition offboarding"
+    ],
+    "relatedSurfaces": [
+      "protect.kineticgain.com",
+      "azure.kineticgain.com",
+      "portfolio.kineticgain.com"
+    ],
+    "companyTags": [
+      "Microsoft",
+      "Entra",
+      "Intune"
+    ],
+    "driftScore": 72,
+    "licenseWasteScore": 81,
+    "accessReviewBurdenScore": 64,
+    "duplicationScore": 58,
+    "controlGapScore": 55,
+    "recoverableCostMillions": 11,
+    "headline": "Microsoft identity is strong, but license overlap is still too expensive.",
+    "nextMove": "Create one reclaim-first entitlement packet for every role or device transition above the premium-access threshold."
+  },
+  {
+    "id": "cyberark-drift",
+    "lane": "Privileged access and secrets governance",
+    "dimension": "TOOL_DUPLICATION",
+    "action": "CONSOLIDATE",
+    "operatingCluster": "Privileged identity",
+    "driftTier": "CONSTRAINED",
+    "boardQuestion": "Where is privileged-access spend drifting because overlapping identity and secrets controls are doing similar work in parallel?",
+    "owner": "Security platform lead",
+    "audience": "Board risk committee",
+    "driftNarrative": "Privileged access is necessary, though control duplication is still too high across identity and secrets layers.",
+    "operatingReality": "Security posture is solid, but the operating stack still carries overlap that finance will keep questioning.",
+    "riskHeadline": "The trust story is strong, yet the tooling stack is still more expensive and heavier than it needs to be.",
+    "driftSignal": "Secrets, session, and access review workflows still branch across separate systems that partially duplicate each other.",
+    "blockingIssue": "One privileged control story still requires evidence from too many adjacent products and review paths.",
+    "evidenceArtifacts": [
+      "identity risk evidence ledger",
+      "access certification api dotnet",
+      "workforce access certification hub"
+    ],
+    "opportunityMoves": [
+      "collapse overlapping workflows",
+      "standardize proof collection",
+      "retire redundant admin coverage"
+    ],
+    "relatedSurfaces": [
+      "identity.kineticgain.com",
+      "suite.kineticgain.com",
+      "portfolio.kineticgain.com"
+    ],
+    "companyTags": [
+      "CyberArk",
+      "Okta",
+      "Microsoft"
+    ],
+    "driftScore": 77,
+    "licenseWasteScore": 63,
+    "accessReviewBurdenScore": 69,
+    "duplicationScore": 82,
+    "controlGapScore": 61,
+    "recoverableCostMillions": 9,
+    "headline": "Privileged access is real, but the stack is still too duplicative.",
+    "nextMove": "Map one privileged-access workflow to one surviving control layer and retire adjacent duplication where the evidence overlap is obvious."
+  },
+  {
+    "id": "procurement-drift",
+    "lane": "Procurement and vendor access operations",
+    "dimension": "REVIEW_DRIFT",
+    "action": "STANDARDIZE",
+    "operatingCluster": "Procurement / trust",
+    "driftTier": "PRESSURED",
+    "boardQuestion": "Which access-heavy lane is still paying too much because review cadence and owner discipline are inconsistent across vendors?",
+    "owner": "Chief Commercial Officer",
+    "audience": "Board growth committee",
+    "driftNarrative": "Procurement is commercially helpful, though access review drift still keeps the cost layer softer than it should be.",
+    "operatingReality": "The team can answer diligence well, but user and vendor-access cycles still run through uneven standards.",
+    "riskHeadline": "The enterprise sales motion is credible, but access governance is still more manual and expensive than necessary.",
+    "driftSignal": "Questionnaire users, trust-room collaborators, and proof-room admins still linger beyond the narrow window in which they are useful.",
+    "blockingIssue": "One commercial diligence packet still creates too many temporary access decisions without one clean review standard.",
+    "evidenceArtifacts": [
+      "procurement ready os",
+      "security questionnaire answer studio",
+      "trust center evidence room"
+    ],
+    "opportunityMoves": [
+      "standardize temporary access windows",
+      "bundle review evidence",
+      "reduce vendor-access exceptions"
+    ],
+    "relatedSurfaces": [
+      "procurement.kineticgain.com",
+      "questionnaire.kineticgain.com",
+      "trust.kineticgain.com"
+    ],
+    "companyTags": [
+      "Google",
+      "Drata",
+      "Vanta"
+    ],
+    "driftScore": 66,
+    "licenseWasteScore": 57,
+    "accessReviewBurdenScore": 73,
+    "duplicationScore": 49,
+    "controlGapScore": 53,
+    "recoverableCostMillions": 5,
+    "headline": "Procurement is working, but review drift is still too manual.",
+    "nextMove": "Standardize buyer-room and questionnaire access windows with one reviewer-of-record and one closeout packet."
+  },
+  {
+    "id": "fintech-drift",
+    "lane": "FinTech merchant and treasury control estate",
+    "dimension": "UNUSED_ENTITLEMENT",
+    "action": "RECLAIM",
+    "operatingCluster": "FinTech",
+    "driftTier": "BROKEN",
+    "boardQuestion": "Where is sensitive finance access still overspending because elevated entitlements are granted faster than they are cleaned up?",
+    "owner": "Chief Revenue Officer",
+    "audience": "Board finance committee",
+    "driftNarrative": "FinTech is commercially strong, though unused elevated entitlements still leak cost and risk together.",
+    "operatingReality": "Controls exist, but entitlement cleanup is still not tight enough for a disciplined finance-access story.",
+    "riskHeadline": "High-value controls are being reused as if they were permanent, not exceptional.",
+    "driftSignal": "Merchant, treasury, and KYC contributors still keep premium or elevated access long after the triggering work ends.",
+    "blockingIssue": "One control exception still tends to create multiple long-lived entitlements with weak cleanup follow-through.",
+    "evidenceArtifacts": [
+      "merchant risk review console",
+      "payment reconciliation exception desk",
+      "kyc refresh case router"
+    ],
+    "opportunityMoves": [
+      "reclaim exception grants faster",
+      "separate permanent from case-based roles",
+      "add expiration proof to elevated-access packets"
+    ],
+    "relatedSurfaces": [
+      "merchant.kineticgain.com",
+      "payments.kineticgain.com",
+      "kyc.kineticgain.com"
+    ],
+    "companyTags": [
+      "Stripe",
+      "Plaid",
+      "AWS"
+    ],
+    "driftScore": 81,
+    "licenseWasteScore": 74,
+    "accessReviewBurdenScore": 71,
+    "duplicationScore": 54,
+    "controlGapScore": 77,
+    "recoverableCostMillions": 8,
+    "headline": "FinTech is valuable, but elevated access is sticking around too long.",
+    "nextMove": "Attach expiration dates and reclaim proof to every elevated finance-access packet before the next review cycle."
+  },
+  {
+    "id": "nonprofit-drift",
+    "lane": "Nonprofit and foundation collaboration access",
+    "dimension": "GUEST_SPRAWL",
+    "action": "CONTAIN",
+    "operatingCluster": "Nonprofit / foundation ops",
+    "driftTier": "PRESSURED",
+    "boardQuestion": "Which reusable lane is still carrying too much guest and collaborator sprawl for the amount of revenue it creates?",
+    "owner": "Principal operator",
+    "audience": "Board strategy committee",
+    "driftNarrative": "Nonprofit work is reusable, though guest sprawl is still weakening the cost discipline around collaboration access.",
+    "operatingReality": "The operating motion is fine, but too many guests outlive the exact grants, reports, or stewardship motions they supported.",
+    "riskHeadline": "Low-friction collaboration is masking a growing cleanup and license burden.",
+    "driftSignal": "Outcome proof, grant evidence, and stewardship rooms still accumulate outside collaborators faster than they shed them.",
+    "blockingIssue": "One shared program packet still spawns too many persistent guest accounts without one clear closeout owner.",
+    "evidenceArtifacts": [
+      "grant compliance evidence desk",
+      "program outcome proof ledger",
+      "donor stewardship ops console"
+    ],
+    "opportunityMoves": [
+      "contain guest access windows",
+      "tighten workspace closeout",
+      "reduce default collaborator persistence"
+    ],
+    "relatedSurfaces": [
+      "grants.kineticgain.com",
+      "outcomes.kineticgain.com",
+      "stewardship.kineticgain.com"
+    ],
+    "companyTags": [
+      "Google",
+      "Salesforce",
+      "Blackbaud"
+    ],
+    "driftScore": 64,
+    "licenseWasteScore": 49,
+    "accessReviewBurdenScore": 61,
+    "duplicationScore": 43,
+    "controlGapScore": 57,
+    "recoverableCostMillions": 3,
+    "headline": "Nonprofit is portable, but guest sprawl is still too loose.",
+    "nextMove": "Make every shared nonprofit workspace carry a named guest-closeout owner and expiration window."
+  },
+  {
+    "id": "robotics-drift",
+    "lane": "Robotics and override operator access",
+    "dimension": "ROLE_BLOAT",
+    "action": "ESCALATE",
+    "operatingCluster": "Robotics",
+    "driftTier": "CONSTRAINED",
+    "boardQuestion": "Which technically interesting lane is still carrying too many broad roles because the operator model is not yet narrow enough?",
+    "owner": "Principal operator",
+    "audience": "Board innovation committee",
+    "driftNarrative": "Robotics widens the story, though role bloat is still weakening the cost and control narrative.",
+    "operatingReality": "The surfaces are useful, but operator access is still too broad relative to the maturity of the lane.",
+    "riskHeadline": "Innovation access is outrunning role precision.",
+    "driftSignal": "Fleet, sensor, and override work still rely on broad operator roles instead of one narrower evidence-backed access model.",
+    "blockingIssue": "One technical responder still keeps more standing access than the lane’s actual operating rhythm requires.",
+    "evidenceArtifacts": [
+      "robot fleet exception board",
+      "sensor health drift monitor",
+      "human override readiness console"
+    ],
+    "opportunityMoves": [
+      "narrow operator roles",
+      "separate standing from emergency access",
+      "make override access more exception-shaped"
+    ],
+    "relatedSurfaces": [
+      "robots.kineticgain.com",
+      "sensor.kineticgain.com",
+      "override.kineticgain.com"
+    ],
+    "companyTags": [
+      "AWS",
+      "NVIDIA",
+      "Boston Dynamics"
+    ],
+    "driftScore": 70,
+    "licenseWasteScore": 52,
+    "accessReviewBurdenScore": 58,
+    "duplicationScore": 51,
+    "controlGapScore": 69,
+    "recoverableCostMillions": 4,
+    "headline": "Robotics broadens the story, but role scope is still too wide.",
+    "nextMove": "Split standing robotics access from override-only access and force explicit exception review for the latter."
+  }
+]

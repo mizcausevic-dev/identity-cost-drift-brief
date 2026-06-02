@@ -1,0 +1,50 @@
+[
+  {
+    "lane": "Entra and Microsoft 365 identity estate",
+    "action": "RECLAIM",
+    "compositeRecoveryScore": 66,
+    "owner": "Identity governance lead",
+    "recoverableCostMillions": 11,
+    "nextMove": "Create one reclaim-first entitlement packet for every role or device transition above the premium-access threshold."
+  },
+  {
+    "lane": "Privileged access and secrets governance",
+    "action": "CONSOLIDATE",
+    "compositeRecoveryScore": 70.4,
+    "owner": "Security platform lead",
+    "recoverableCostMillions": 9,
+    "nextMove": "Map one privileged-access workflow to one surviving control layer and retire adjacent duplication where the evidence overlap is obvious."
+  },
+  {
+    "lane": "Procurement and vendor access operations",
+    "action": "STANDARDIZE",
+    "compositeRecoveryScore": 59.6,
+    "owner": "Chief Commercial Officer",
+    "recoverableCostMillions": 5,
+    "nextMove": "Standardize buyer-room and questionnaire access windows with one reviewer-of-record and one closeout packet."
+  },
+  {
+    "lane": "FinTech merchant and treasury control estate",
+    "action": "RECLAIM",
+    "compositeRecoveryScore": 71.4,
+    "owner": "Chief Revenue Officer",
+    "recoverableCostMillions": 8,
+    "nextMove": "Attach expiration dates and reclaim proof to every elevated finance-access packet before the next review cycle."
+  },
+  {
+    "lane": "Nonprofit and foundation collaboration access",
+    "action": "CONTAIN",
+    "compositeRecoveryScore": 54.8,
+    "owner": "Principal operator",
+    "recoverableCostMillions": 3,
+    "nextMove": "Make every shared nonprofit workspace carry a named guest-closeout owner and expiration window."
+  },
+  {
+    "lane": "Robotics and override operator access",
+    "action": "ESCALATE",
+    "compositeRecoveryScore": 60,
+    "owner": "Principal operator",
+    "recoverableCostMillions": 4,
+    "nextMove": "Split standing robotics access from override-only access and force explicit exception review for the latter."
+  }
+]

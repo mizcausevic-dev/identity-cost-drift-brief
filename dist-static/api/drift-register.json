@@ -1,0 +1,68 @@
+[
+  {
+    "lane": "Entra and Microsoft 365 identity estate",
+    "operatingCluster": "Cloud identity",
+    "driftTier": "PRESSURED",
+    "action": "RECLAIM",
+    "owner": "Identity governance lead",
+    "audience": "Board technology committee",
+    "driftNarrative": "Microsoft identity is strategically important, though license overlap is still leaking money across adjacent admin layers.",
+    "driftScore": 72,
+    "nextMove": "Create one reclaim-first entitlement packet for every role or device transition above the premium-access threshold."
+  },
+  {
+    "lane": "Privileged access and secrets governance",
+    "operatingCluster": "Privileged identity",
+    "driftTier": "CONSTRAINED",
+    "action": "CONSOLIDATE",
+    "owner": "Security platform lead",
+    "audience": "Board risk committee",
+    "driftNarrative": "Privileged access is necessary, though control duplication is still too high across identity and secrets layers.",
+    "driftScore": 77,
+    "nextMove": "Map one privileged-access workflow to one surviving control layer and retire adjacent duplication where the evidence overlap is obvious."
+  },
+  {
+    "lane": "Procurement and vendor access operations",
+    "operatingCluster": "Procurement / trust",
+    "driftTier": "PRESSURED",
+    "action": "STANDARDIZE",
+    "owner": "Chief Commercial Officer",
+    "audience": "Board growth committee",
+    "driftNarrative": "Procurement is commercially helpful, though access review drift still keeps the cost layer softer than it should be.",
+    "driftScore": 66,
+    "nextMove": "Standardize buyer-room and questionnaire access windows with one reviewer-of-record and one closeout packet."
+  },
+  {
+    "lane": "FinTech merchant and treasury control estate",
+    "operatingCluster": "FinTech",
+    "driftTier": "BROKEN",
+    "action": "RECLAIM",
+    "owner": "Chief Revenue Officer",
+    "audience": "Board finance committee",
+    "driftNarrative": "FinTech is commercially strong, though unused elevated entitlements still leak cost and risk together.",
+    "driftScore": 81,
+    "nextMove": "Attach expiration dates and reclaim proof to every elevated finance-access packet before the next review cycle."
+  },
+  {
+    "lane": "Nonprofit and foundation collaboration access",
+    "operatingCluster": "Nonprofit / foundation ops",
+    "driftTier": "PRESSURED",
+    "action": "CONTAIN",
+    "owner": "Principal operator",
+    "audience": "Board strategy committee",
+    "driftNarrative": "Nonprofit work is reusable, though guest sprawl is still weakening the cost discipline around collaboration access.",
+    "driftScore": 64,
+    "nextMove": "Make every shared nonprofit workspace carry a named guest-closeout owner and expiration window."
+  },
+  {
+    "lane": "Robotics and override operator access",
+    "operatingCluster": "Robotics",
+    "driftTier": "CONSTRAINED",
+    "action": "ESCALATE",
+    "owner": "Principal operator",
+    "audience": "Board innovation committee",
+    "driftNarrative": "Robotics widens the story, though role bloat is still weakening the cost and control narrative.",
+    "driftScore": 70,
+    "nextMove": "Split standing robotics access from override-only access and force explicit exception review for the latter."
+  }
+]
