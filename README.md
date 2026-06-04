@@ -2,7 +2,7 @@
 
 Board-ready executive-intelligence surface for exposing identity spend drift, license overlap, control duplication, and operator-visible cost leakage across the broader Kinetic Gain suite.
 
-- Live: `http://idcost.kineticgain.com/`
+- Live: `https://idcost.kineticgain.com/`
 - Repo: `mizcausevic-dev/identity-cost-drift-brief`
 
 ## Why this matters
